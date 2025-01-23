@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on change event</title>
+</head>
+<body>
+    <select onchange="display(event)">
+        <option>Select City</option>
+        <option>Mumbai</option>
+        <option>Nanded</option>
+        <option>Pune</option>
+        <option>Sangli</option>
+    </select>
+    <script>
+        function display(event){
+           alert("You select city as "+event.target.value);
+        }
+    </script>
+    
+</body>
+</html>

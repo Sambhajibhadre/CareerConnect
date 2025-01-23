@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom practice</title>
+</head>
+<body>
+    <h1 id = "demo">Welcome to hefshine software</h1>
+    <p class="demo1">This is example of class selector</p>
+    <marquee class="demo1">Welcome to js session</marquee>
+    <script>
+        var ele = document.getElementById("demo");
+        ele.style.color="black";
+        ele.style.backgroundColor="red"
+        ele.style.fontSize="60px";
+        var arr=document.getElementsByClassName("demo1");
+        arr[0].style.color="blue";
+        arr[1].style.color="green";
+    </script>
+    
+</body>
+</html>

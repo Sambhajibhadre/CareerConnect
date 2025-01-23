@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time practice
+
+    </title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+
+        // var now=new Date();
+        // alert(now);
+        // function greet(){
+        //     document.write("namste ");
+        // }
+        // setTimeout(greet,2000);
+
+        function display(){
+            var now = new Date();
+            document.getElementById("result").innerHTML=now;
+        }
+        setInterval(display,1000);
+    </script>
+    
+</body>
+</html>

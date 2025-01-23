@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    var name = "Welcome to hefshineSoftware";
+    var arr = name.split("");
+    for(var i of arr){
+        document.write(i+"<br>");
+    }
+    document.write("reverse string is "+ arr.reverse().join(""))
+
+    var str = "India is my country";
+    document.write("<br> substring is "+str.slice(0,12));
+    var str1 = "Color red is more bright then color blue";
+    var newstr1 = str1.replace(/color/ig,"paint")
+    document.write("<br> after replacement , string is "+newstr1);
+
+    document.write("<br>index of ind is "+str.indexOf("y"));
+    document.write("<br>index of last occourance is "+str.lastIndexOf("y"));
+    str2="Javascript is fun";
+    document.write("is script is present in main string "+str2.includes("script"));
+
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var marks = [47,56,563,43,543];
+        document.write(...marks+" ");
+        var data=[1233,3433,74,4,...marks];
+        document.write("<br> copy data.......<br>")
+        for(var i of data){
+            document.write(i+"<br>")
+        }
+        //max function
+        var result=Math.max(23,43,53,53,23,45,89);
+        //alert("greatest number is "+result);
+
+        "<br>"
+        var maxele = Math.max(...marks);
+        document.write("<br> max element from array is "+maxele)
+
+        var name1="vaibhav Shinde "
+        var len1=name1.length;
+
+        document.write("<br>length of given string is: "+len1)
+        document.write("<br> String in upperCase "+name1.toUpperCase());
+        document.write("<br> String in LowerCase "+name1.toLowerCase());
+        var str = "    India is my country     ";
+        document.write("<br>length of string with extra spaces is "+str.length);
+        var res = str.trim();
+        document.write("<br> "+res)
+        document.write("<br>length of string with tream"+res.length);
+        
+    </script>
+</body>
+</html>

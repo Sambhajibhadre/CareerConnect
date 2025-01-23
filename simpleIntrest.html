@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="si(event)">
+        enter a amount: <input type="number" id="amount">
+        <br>
+        enter Rate: <input type="number" id="rate"><br>
+        enter time: <input type="number" id="time"><br>
+        Simple Intrest: <input type="number" id="SI" readonly><br>
+        <input type="submit" value="calculate si">
+
+    </form>
+    <p id = "result"></p>
+    <script>
+        function si(event){
+            
+            var amount= parseInt(document.getElementById("amount").value)
+            var rate= parseInt(document.getElementById("rate").value)
+            
+            var time= parseInt(document.getElementById("time").value)
+            var simpleInterest = (amount * rate * time) / 100;
+            document.getElementById("SI").value = simpleInterest;
+           // document.getElementById("result").innerHTML=((amount*rate*time)/100);
+            
+           event.preventDefault();
+        }
+    </script>
+
+    
+</body>
+</html>
